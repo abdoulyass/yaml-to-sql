@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.java.project</groupId>
+  <artifactId>YAMLtoSQL</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging> <!-- Vous pouvez ajouter cette ligne si votre projet est un WAR -->
+  <name>YAMLtoSQL Maven Project</name>
+  <url>http://maven.apache.org</url>
+  <!-- Le reste du contenu de votre fichier POM reste inchangé -->
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+   <dependency>
+        <groupId>org.yaml</groupId>
+        <artifactId>snakeyaml</artifactId>
+        <version>1.29</version> <!-- Replace with the latest version available -->
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.1</version>
+      </plugin>
+      <!-- Ajoutez d'autres plugins au besoin -->
+    </plugins>
+    <finalName>YAMLtoSQL</finalName>
+  </build>
+</project>
